@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Future CGPA Calculator</h1>
+    </header>
+
+    <div class="main-container">
+
+        <div class="inputs">
+            <form>
+                <label for="current_credit">Current Credits: </label>
+                <input type="number" name="current_credit" id="current_credit" placeholder="Enter your total completed credits till this sem" required>
+                <br>
+                <label for="current_cgpa">Current CGPA: </label>
+                <input type="number" step="0.01" name="current_cgpa" id="current_cgpa" placeholder="Enter your current CGPA" required>
+                <br>
+                <label for="target_credit">Next Semester Credits</label>
+                <input type="number" name="target_credit" id="target_credit" placeholder="Enter your next semester credits" required>
+                <br>
+                <label for="target_cgpa">Target CGPA</label>
+                <input type="number" step="0.01" name="target_cgpa" id="target_cgpa" placeholder="Enter your target CGPA" required>
+                <br>
+                <button type="button" onclick="calculateGPA()">Calculate</button>
+            </form>
+        </div>
+
+        <div class="outputs">
+            <p>You need to get this GPA in the next semester to achieve your target CGPA</p>
+            <h2 id="output"></h2>
+        </div>
+
+    </div>
+
+    <footer>
+        <p align = "center">Made with ❤️ by <a href="https://github.com/sai-vatturi">Sai Vatturi</a></p>
+    </footer>
+
+    <script>
+        function calculateGPA() {
+            const current_cgpa = parseFloat(document.querySelector('#current_cgpa').value);
+            const current_credit = parseFloat(document.querySelector('#current_credit').value);
+            const target_cgpa = parseFloat(document.querySelector('#target_cgpa').value);
+            const target_credit = parseFloat(document.querySelector('#target_credit').value);
+
+            const current_cgpa_credit = current_cgpa * current_credit;
+            const target_cgpa_credit = target_cgpa * (current_credit + target_credit); 
+            const total_credit = current_credit + target_credit;
+            const gpa_required = (target_cgpa_credit - current_cgpa_credit) / target_credit;
+
+            document.getElementById('output').textContent = `${gpa_required.toFixed(2)} GPA`;
+        }
+    </script>
+
+</body>
+</html>
