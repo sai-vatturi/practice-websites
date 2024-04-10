@@ -25,10 +25,13 @@ function Hero() {
                     loop
                 />
             </div>
-            <p className="text-gray-500 py-2 md:text-lg md:py-4">
+            <p className="text-gray-500 py-2 md:text-lg md:py-4 mx-10">
                 Monitor your data analytics to increase revenue for BTB, BTC and
                 SASS platforms.
             </p>
+            <button className="bg-[#00df9a] w-[200px] py-2 mx-auto rounded-md mt-3 text-black">
+                Get Started
+            </button>
         </div>
     );
 }
