@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Counter from "./Counter";
 
 const Navbar = () => {
     const [nav, setNav] = useState(true);
@@ -45,7 +44,6 @@ const Navbar = () => {
                     <li className="p-2">Contact Us</li>
                 </ul>
             </div>
-            <Counter />
         </div>
     );
 };
