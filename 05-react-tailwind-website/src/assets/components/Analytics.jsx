@@ -10,7 +10,7 @@ const Analytics = () => {
                     <p className="text-[#00df9a] uppercase font-bold text-lg sm:text-2l md:text-2xl">
                         Data Analytics Dashboard
                     </p>
-                    <h1 className="text-3xl md:text-5xl sm:text-4xl font-bold py-3 sm:py-4 md:py-5 ">
+                    <h1 className="text-3xl md:text-5xl sm:text-4xl font-bold pb-2 sm:pb-4 md:pb-5 ">
                         Manage Data Analytics Centrally
                     </h1>
                     <p>

@@ -5,6 +5,7 @@ import "./App.css";
 import Navbar from "./assets/components/Navbar";
 import Hero from "./assets/components/Hero";
 import Analytics from "./assets/components/Analytics";
+import NewsLetter from "./assets/components/NewsLetter";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navbar />
             <Hero />
             <Analytics />
+            <NewsLetter />
         </div>
     );
 }
