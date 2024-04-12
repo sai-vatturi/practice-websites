@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetter = () => {
     return (
         <div className="text-white w-full py-16">
-            <div className="max-w-[1240px] mx-5 grid lg:grid-cols-3 md:mx-10 lg:mx-auto">
+            <div className="max-w-[1240px] mx-5 grid lg:grid-cols-3 md:mx-10 lg:mx-auto lg:px-5">
                 <div className="lg:col-span-2">
                     <h1 className="text-3xl font-bold py-2 sm:text-4xl md:text-5xl">
                         Want tips & tricks to optimize your flow?
