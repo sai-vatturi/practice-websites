@@ -5,8 +5,8 @@ import Triple from "../assets/triple.png";
 
 const Cards = () => {
     return (
-        <div className="w-full py-18 bg-white mx-auto">
-            <div className="grid md:grid-cols-3 max-w-[1240px] px-5 gap-12 py-10">
+        <div className="w-full py-18 bg-white">
+            <div className="grid md:grid-cols-3 max-w-[1240px] px-5 gap-12 py-10 mx-auto">
                 <div className="w-full text-center shadow-lg hover:scale-105 duration-300 my-12">
                     <img
                         className="w-20 bg-white mx-auto mt-[-3rem]"
@@ -30,7 +30,7 @@ const Cards = () => {
                         Start Trial
                     </button>
                 </div>
-                <div className="w-full text-center shadow-lg hover:scale-105 duration-300 my-12">
+                <div className="w-full text-center shadow-lg group hover:scale-105 duration-300 my-12">
                     <img
                         className="w-20 bg-white mx-auto mt-[-3rem]"
                         src={Double}
@@ -49,7 +49,7 @@ const Cards = () => {
                             Send upto 10GB
                         </p>
                     </div>
-                    <button className="bg-[#00df9a] w-[200px] py-2 mx-auto rounded-md mt-3 text-black my-5 hover:text-[#00df9a] hover:bg-black">
+                    <button className="bg-[#00df9a] w-[200px] py-2 mx-auto rounded-md mt-3 text-black my-5 group-hover:text-[#00df9a] group-hover:bg-black">
                         Start Trial
                     </button>
                 </div>

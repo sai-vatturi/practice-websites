@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-    const [nav, setNav] = useState(true);
+    const [nav, setNav] = useState(false);
 
     const handleNav = () => {
         setNav(!nav);
@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className="p-2">Contact Us</li>
             </ul>
             <div onClick={handleNav} className="block md:hidden">
-                {!nav ? (
+                {nav ? (
                     <AiOutlineClose size={20} />
                 ) : (
                     <AiOutlineMenu size={20} />
@@ -28,7 +28,7 @@ const Navbar = () => {
 
             <div
                 className={
-                    !nav
+                    nav
                         ? "w-[60%] fixed bg-[#000300] left-0 h-full top-0 border-r border-r-gray-800 ease-in-out duration-500"
                         : "fixed left-[-100%]"
                 }

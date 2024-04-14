@@ -12,7 +12,7 @@ const NewsLetter = () => {
                 </div>
                 <div className="py-4">
                     <input
-                        className="p-3 flex w-full rounded-md text-black"
+                        className="p-3 flex w-full rounded-md text-black my-2 md:my-0"
                         type="email"
                         placeholder="Enter Email"
                     />
