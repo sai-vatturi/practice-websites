@@ -3,11 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Temperature converter</title>
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<h1>Temperature Convertor</h1>
+		<form class="main-container" onsubmit="event.preventDefault(); convert();">
+			<h2>Temperature converter</h2>
+			<input type="number" id="inputBox" required placeholder="Enter Degrees" /> <br />
+			<label for="toC">Fahrenheit - Celcius</label>
+			<input type="radio" id="toC" name="temp" required /> <br />
+			<br />
+			<label for="toF">Celcius - Fahrenheit</label>
+			<input type="radio" id="toF" name="temp" required /> <br />
+			<input type="submit" value="Convert" id="sub" />
+			<p>Converted temp is</p>
+			<p id="demo"></p>
+		</form>
+
 		<script src="./index.js"></script>
 	</body>
 </html>
